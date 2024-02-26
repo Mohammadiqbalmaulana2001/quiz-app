@@ -1,6 +1,4 @@
 import { useState, useRef, useEffect} from "react";
-// import axios from "axios";
-
 import { TriviaData } from "../apis/quiz";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie"

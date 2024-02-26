@@ -25,13 +25,13 @@ const SignUp = () => {
     };
 
     return (
-        <section className="flex flex-col space-y-4 w-5/12 bg-zinc-900 rounded-xl p-6">
+        <section className="flex flex-col space-y-4 w-5/12 bg-zinc-600 rounded-xl p-6">
             <h1 className="text-center text-xl font-bold">Sign Up</h1>
             <form onSubmit={onSubmit} className="flex flex-col space-y-6">
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="email-address">Email Address</label>
                     <input
-                        className="border-zinc-800 border rounded-xl bg-zinc-900 focus:border-blue-500 caret-blue-500 py-2.5 px-4 outline-0"
+                        className="border-zinc-800 border rounded-xl bg-zinc-900 focus:border-sky-400 caret-sky-400 py-2.5 px-4 outline-0"
                         type="email"
                         label="Email Address"
                         value={email}
@@ -44,7 +44,7 @@ const SignUp = () => {
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="password">Create Password</label>
                     <input
-                        className="border-zinc-800 border rounded-xl bg-zinc-900 focus:border-blue-500 caret-blue-500 py-2.5 px-4 outline-0"
+                        className="border-zinc-800 border rounded-xl bg-zinc-900 focus:border-sky-400 caret-sky-400 py-2.5 px-4 outline-0"
                         type="password"
                         label="Create Password"
                         value={password}
@@ -56,14 +56,14 @@ const SignUp = () => {
 
                 {error && <p className="text-red-500">{error}</p>}
 
-                <button type="submit" className="py-2 px-4 rounded-xl font-semibold bg-blue-500 hover:bg-blue-600">
+                <button type="submit" className="py-2 px-4 rounded-xl font-semibold bg-sky-400 hover:bg-sky-600">
                     Sign Up
                 </button>
             </form>
 
             <p>
                 Already have an account?{' '}
-                <NavLink to="/login" className="text-blue-500 hover:underline">
+                <NavLink to="/login" className="text-sky-400 hover:underline">
                     Sign In
                 </NavLink>
             </p>
